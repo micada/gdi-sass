@@ -398,7 +398,7 @@ height: 18px; }</code></pre>
             <p>With @each, you can loop through a list of items and create styles for each item in the list.</p>
             <p>Sass code:</p>
             <pre style="width: 610px"><code class ="php">@each $icon in youtube, twitter, facebook {
-  .icon-$icon {
+  .icon-#{$icon} {
     background-image: url('#{$icon}.png');
   }
 }
